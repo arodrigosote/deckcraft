@@ -43,7 +43,7 @@ fn title(id: &str) -> &'static str {
         "renameShape" => "Rename",
         "renameLayout" => "Rename Layout",
         "paragraph" => "Paragraph",
-        "about" => "About DeckCraft",
+        "about" => "About ICASYS Presentaciones",
         "preferences" => "Preferences",
         "export" => "Export",
         "symbol" => "Symbol",
@@ -55,8 +55,8 @@ fn title(id: &str) -> &'static str {
         "chartData" => "Chart Data",
         "trim" => "Trim Media",
         "smartart" => "Choose a SmartArt Graphic",
-        "quit" => "DeckCraft",
-        _ => "DeckCraft",
+        "quit" => "ICASYS Presentaciones",
+        _ => "ICASYS Presentaciones",
     }
 }
 

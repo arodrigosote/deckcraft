@@ -1,0 +1,8 @@
+{
+  "app": "deckcraft",
+  "name": "ICASYS Presentaciones",
+  "slug": "presentaciones",
+  "upstream_name": "DeckCraft",
+  "upstream_base": "457406a7a5b62425e915926c8ccb0984e61a198c",
+  "owner": "arodrigosote"
+}
