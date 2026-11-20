@@ -17,7 +17,7 @@ pub(crate) struct Runtime {
 
 impl Default for Runtime {
     fn default() -> Self {
-        Self { updater: Updater::new(&crate::UPDATE_APP, VERSION), enabled: false, check_requested: false }
+        Self { updater: Updater::new(&crate::UPDATE_APP, VERSION).with_source(::std::sync::Arc::new(|| -> ::std::result::Result<::std::option::Option<::craft_update::Release>, ::std::string::String> { Err(::std::string::String::from("ICASYS apps are updated by ICASYS: https://icasys.mx / Las apps de ICASYS se actualizan desde ICASYS: https://icasys.mx")) })), enabled: false, check_requested: false }
     }
 }
 
@@ -95,7 +95,7 @@ mod tests {
     /// asks no server, with the check at start turned on.
     fn app_with_records(root: &std::path::Path) -> SlideApp {
         let mut app = SlideApp::new(deckcraft_engine::Session::new(), crate::Services::default());
-        app.updates_rt.updater = Updater::new(&crate::UPDATE_APP, VERSION)
+        app.updates_rt.updater = Updater::new(&crate::UPDATE_APP, VERSION).with_source(::std::sync::Arc::new(|| -> ::std::result::Result<::std::option::Option<::craft_update::Release>, ::std::string::String> { Err(::std::string::String::from("ICASYS apps are updated by ICASYS: https://icasys.mx / Las apps de ICASYS se actualizan desde ICASYS: https://icasys.mx")) }))
             .with_paths(craft_update::Paths::under(root))
             .with_pins_path(root.join("pins.json"))
             .with_source(std::sync::Arc::new(|| Ok(None)));

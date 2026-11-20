@@ -12,6 +12,9 @@
 pub const UPDATE_APP: craft_update::app::App = craft_update::app::App {
     icon_png: Some(include_bytes!("../../../assets/app-icon/hicolor/128x128/apps/ai.storyteller.deckcraft.png")),
     accent: Some([0xf0, 0x7a, 0x1e]),
+    name: "ICASYS Presentaciones",
+    developer: "ICASYS",
+    repo: "arodrigosote/deckcraft",
     ..craft_update::suite::DECKCRAFT
 };
 
@@ -137,7 +140,7 @@ pub const UI_COMMANDS: &[(&str, &str, Option<&str>, &str)] = &[
         Some("Cmd+P"),
         "{layout?, perPage?, slides?, includeHidden?, frame?, paper?: letter|a4|legal|a3, orientation?: portrait|landscape}",
     ),
-    ("app.about", "About DeckCraft", None, "{}"),
+    ("app.about", "About ICASYS Presentaciones", None, "{}"),
     ("app.checkUpdates", "Check for Updates…", None, "{}"),
     ("app.palette", "Command Palette", Some("Cmd+Shift+P"), "{}"),
     ("app.preferences", "Preferences…", Some("Cmd+,"), "{}"),
