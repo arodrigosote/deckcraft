@@ -1,0 +1,18 @@
+{
+  "app": "deckcraft",
+  "name": "ICASYS Presentaciones",
+  "slug": "presentaciones",
+  "upstream_name": "DeckCraft",
+  "upstream_base": "7cc73ab1895ed2e30c8afbcada20c70b9ea0a440",
+  "owner": "arodrigosote",
+  "es_ui": false,
+  "deb_section": "editors",
+  "cli": "deckcraft-cli",
+  "mcp": {
+    "headless": "mcp",
+    "attach": "mcp --connect 7979",
+    "app_flag": "--control 7979",
+    "auth": "none",
+    "project": ""
+  }
+}

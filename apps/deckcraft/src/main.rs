@@ -126,7 +126,7 @@ fn services(native_wayland: bool) -> Services {
                 "theme" => d.add_filter("Themes and presentations", &["thmx", "pptx", "potx", "ppsx"]).add_filter("Office Theme", &["thmx"]),
                 _ => d
                     .add_filter("Presentations", &["deckcraft", "pptx", "potx", "ppsx"])
-                    .add_filter("DeckCraft", &["deckcraft"])
+                    .add_filter("ICASYS Presentaciones", &["deckcraft"])
                     .add_filter("PowerPoint", &["pptx", "potx", "ppsx"])
                     .add_filter("Outline", &["txt", "md"]),
             };
@@ -240,7 +240,7 @@ fn main() -> eframe::Result {
     }
     let mut options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
-            .with_title("DeckCraft")
+            .with_title("ICASYS Presentaciones")
             .with_inner_size([1440.0, 900.0])
             .with_min_inner_size([900.0, 560.0])
             .with_drag_and_drop(true)

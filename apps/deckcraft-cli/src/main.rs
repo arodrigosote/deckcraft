@@ -89,7 +89,7 @@ fn main() -> ExitCode {
         Some("mcp") => report(mcp(rest)),
         Some("links") => {
             use deckcraft_engine::links::{APP_PAGE, DISCORD, GITHUB, WEBSITE};
-            outln!("Discord   {DISCORD}\nWebsite   {WEBSITE}\nApp page  {APP_PAGE}\nGitHub    {GITHUB}");
+            outln!("ICASYS    {DISCORD}\nWebsite   {WEBSITE}\nApp page  {APP_PAGE}\nGitHub    {GITHUB}");
             ExitCode::SUCCESS
         }
         Some(other) => unknown(other),
